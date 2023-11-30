@@ -1,0 +1,14 @@
+/* FilterOptions.css */
+.filter-options {
+    margin-bottom: 15px;
+  }
+  
+  .filter-options label {
+    margin-right: 10px;
+  }
+  
+  .filter-options select {
+    padding: 8px;
+    border-radius: 5px;
+  }
+  

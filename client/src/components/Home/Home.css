@@ -1,0 +1,156 @@
+.Home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: #003049;
+  margin: 1em;
+  padding: 1em;
+  overflow:visible;
+  background-color: #edf2f4;
+}
+.Blood-Buddy{
+  font-size: 5vw;
+  font-style: Poppins;
+  color: #d90429;
+}
+.home-container {
+  width: 95vw;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-items: center;
+  overflow: hidden;
+}
+.Project-Description{
+    width: 100%;
+    height: 65%;
+    display: flex;
+}
+.Description{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Description h1{
+  font-size: 4.5vh;
+  font-family: Roboto;
+  color: #ef233c;
+}
+.Description h5{
+  font-size: 2.9vh;
+}
+.Description p{
+  font-size:2.5vh;
+  margin-bottom:5%;
+}
+img{
+  width: 30%;
+  height: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.Footer{
+  margin-top: 1em;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.Explore{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Explore h3{
+  color: #ef233c;
+}
+.ExploreButtons{
+  display: flex;
+}
+.ExploreButtons button{
+  height: 5vh;
+  border: none;
+  background-color: #4f000b;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.ExploreButtons button:hover{
+  color: #c1121f;
+  background-color: #fff;
+}
+.Dev{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Dev p{
+  font-size: 0.9em;
+}
+.Dev h3{
+  font-size: 1em;
+  color: #ef233c;
+}
+.contact a{
+  padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  .Home{
+    height: auto;
+  }
+  .Blood-Buddy {
+    font-size: 8vw; /* Increase font size for smaller screens */
+  }
+
+  .home-container {
+    width: auto; /* Adjusted width for small screens */
+  }
+
+  .Project-Description {
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Description {
+    width: 100%; 
+  }
+  .Description h1{
+    font-size: 4vw;
+    font-family: Roboto;
+  }
+  .Description p{
+    width: 80%;
+    font-size: 1.3em;
+  }
+  img {
+    width: 90%; 
+    margin: 1em 0;
+  }
+  .Footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Explore{
+    width: 90vw;
+    padding: 2em;
+  }
+  .Dev{
+    width: 90%;
+  }
+  .Dev p{
+    width: 80%;
+  }
+}
+
+

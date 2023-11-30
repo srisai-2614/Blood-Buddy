@@ -1,0 +1,46 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .about-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .about-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .how-it-works {
+    margin-top: 20px;
+  }
+  
+  .how-it-works h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .how-it-works ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .how-it-works ol li {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  
