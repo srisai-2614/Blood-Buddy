@@ -12,9 +12,9 @@ app.use(bodyParser.json());
 
 const pool = mysql.createPool({
   host: 'db4free.net',
-  user: 'pavan_2614',
-  password: 'Pavan@2614',
-  database: 'bloodbuddy',
+  user: 'USER_Name',
+  password: 'Password',
+  database: 'dbname',
   connectTimeout: 60000
 });
 
