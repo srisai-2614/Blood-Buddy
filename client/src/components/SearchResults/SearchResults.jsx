@@ -3,6 +3,7 @@ import './SearchResults.css';
 import Contact from '../Contact/Contact';
 
 const SearchResults = ({ results }) => {
+  console.log(results);
   return (
     <div className="search-results">
       <h3>Search Results</h3>

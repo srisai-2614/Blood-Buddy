@@ -22,7 +22,7 @@ const Home = () => {
                   </p>
 
                 </div>
-                  <img src={blood} alt='Im'/>
+                  <img src={blood} alt='Im' loading='lazy'/>
             </div>
             <div className='Footer'>
                 <div className='Explore'>

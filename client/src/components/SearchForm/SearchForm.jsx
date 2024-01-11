@@ -17,15 +17,14 @@ const SearchForm = () => {
   const [filteredResults, setFilteredResults] = useState([]);
 
   useEffect(() => {
-    // Fetch user data when the component mounts
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:4000');
         setUserData(response.data);
 
         // Extract unique blood groups and regions from user data
-        const uniqueBloodGroups = [...new Set(response.data.map((user) => user.bloodGroup))];
-        const uniqueRegions = [...new Set(response.data.map((user) => user.region))];
+        const uniqueBloodGroups = [...new Set(response.data.map((user) => user.Blood_Group))];
+        const uniqueRegions = [...new Set(response.data.map((user) => user.Region))];
 
         setBloodGroups(uniqueBloodGroups);
         setRegions(uniqueRegions);
@@ -37,14 +36,9 @@ const SearchForm = () => {
     fetchData();
   }, []);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setSearchForm((prevForm) => ({ ...prevForm, [name]: value }));
-  };
-
   const handleSearch = () => {
-    const bloodGroupMatch = searchForm.bloodGroup ? (user) => user.bloodGroup === searchForm.bloodGroup : () => true;
-    const regionMatch = searchForm.region ? (user) => user.region === searchForm.region : () => true;
+    const bloodGroupMatch = searchForm.bloodGroup ? (user) => user.Blood_Group === searchForm.bloodGroup : () => true;
+    const regionMatch = searchForm.region ? (user) => user.Region === searchForm.region : () => true;
     const results = userData.filter((user) => bloodGroupMatch(user) && regionMatch(user));
     setFilteredResults(results);
   };

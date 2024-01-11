@@ -21,23 +21,21 @@ const LR = ({ handleLogin }) => {
     handleLogin();
     Navigate('/sl/*', { replace: true }); // Redirect to SL page
   };
+  const customNavigate = (to) => {
+    Navigate(to, { replace: true });
+  };
+
   return (
     <div style={{display:'flex',flexDirection:'column'}}>
       <div className='container'>
-              <button  className='Navitem1' onClick={() => Navigate('/home', { replace: true })}>Home</button>
-              <button className='Navitem2'onClick={() => Navigate('/login', { replace: true })}>Login</button>
+              <button className='Navitem1' onClick={() => customNavigate('/home')}>Home</button>
+              <button className='Navitem2'onClick={() => login()}>Login</button>
               <button className='Navitem3' onClick={() => register()}>Register</button>
               <button className='Navitem4' onClick={() => Guest()}>Guest</button>
               <button className='Navitem4' onClick={() => Navigate('/about')}>About</button>
       </div>
 
-      {/* Render login and register buttons only when not logged in */}
-      {!handleLogin && (
-        <div>
-          <button onClick={login}>Login</button>
-          <button onClick={register}>Register</button>
-        </div>
-      )}
+      
       <Routes>
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
