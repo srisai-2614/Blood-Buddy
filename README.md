@@ -20,7 +20,7 @@ Blood-Buddy is a web application that connects blood donors with those in need, 
 ### Backend
 
 - **Framework:** Node.js, Express.js
-
+- **DataBase:** MySQL
 ## Installation
 
 ### Client
